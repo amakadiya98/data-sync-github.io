@@ -1,0 +1,217 @@
+/*  */
+
+.common-banner-section.about-us-page {
+    padding: 168px 0 265px 0;
+    min-height: auto;
+    max-height: 100%;
+}
+.common-banner-section.about-us-page .common-banner-content {
+    padding-top: 0px;
+}
+
+
+
+
+
+
+/* DATASYNC TEAM  */
+
+.datasync-team {
+    padding: 47px 0 190px 0;
+    background-image: url(../images/about-us/datasync-team-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.datasync-team .team-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+    margin-top: 56px;
+}
+
+.datasync-team .team-card {
+    position: relative;
+    width: 225px;
+    height: 362px;
+}
+
+.datasync-team .team-card img {
+    width: 225px;
+    height: 362px;
+    object-fit: cover;
+    border: 0.77px solid var(--blue);
+    border-radius: 10px;
+    border-bottom: 14px solid var(--blue);
+}
+
+.datasync-team .team-member-info {
+    backdrop-filter: blur(14px);
+    border: 0.77px solid var(--blue);
+    background: #E6E6E633;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 100%;
+    min-height: 140px;
+    position: absolute;
+    bottom: 7px;
+    padding: 12px 0 16px 0;
+}
+
+.datasync-team .member-info {
+    max-width: 200px;
+    margin: auto;
+}
+
+.datasync-team .team-member-info h3 {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 15.31px;
+    line-height: 18.51px;
+    letter-spacing: 2%;
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.datasync-team .team-member-info h4 {
+    font-family: Gilroy;
+    font-weight: 700;
+    font-size: 11.48px;
+    letter-spacing: 2%;
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.datasync-team .team-member-info p {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13.19px;
+    letter-spacing: 5%;
+    text-align: center;
+    color: var(--white);
+    margin: 0;
+}
+
+
+/* MISSION SECTION */
+.mission-section {
+    padding: 60px 0 90px 0;
+    background-color: var(--white);
+    overflow-x: hidden;
+}
+
+.mission-section h2 {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 54.4px;
+    letter-spacing: 2%;
+    color: #003D7C33;
+    margin-bottom: 36px;
+}
+
+.mission-section .mission-cards-content {
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+}
+
+.mission-section .mission-card {
+    border: 1px solid var(--blue);
+    border-radius: 11px;
+    padding: 10px 26px;
+    border-bottom: 8px solid var(--blue);
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    display: flex;
+    gap: 28px;
+}
+
+.mission-section .mission-card h4 {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24.18px;
+    letter-spacing: 2%;
+    color: var(--blue);
+}
+
+.mission-section .mission-card p {
+    font-family: 'Gilroy';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 21px;
+    letter-spacing: -1%;
+    text-align: justify;
+    color: var(--primary);
+}
+
+
+@media only screen and (max-width: 520px) {
+    .datasync-team .team-info {
+        gap: 58px;
+        margin-top: 73px;
+    }
+
+    .datasync-team .team-card {
+        width: 304px;
+    }
+
+    .datasync-team .team-card img {
+        width: 304px;
+        object-position: top;
+    }
+
+    .datasync-team .member-info {
+        max-width: 250px;
+    }
+
+    .datasync-team {
+        background-image: url(../images/about-us/datasync-team-bg-sm.png);
+        background-position: center calc(0% - 36px);
+
+    }
+
+    .datasync-team .team-member-info h3 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .datasync-team .team-member-info h4 {
+        font-size: 15px;
+    }
+
+    .datasync-team {
+        padding: 25px 0 125px 0;
+    }
+
+    .mission-section h2 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .mission-section .mission-card {
+        border: 1px solid var(--blue);
+        border-radius: 6px;
+        padding: 10px 16px 16px 8px;
+        border-bottom: 4px solid var(--blue);
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        gap: 9px;
+    }
+
+    .mission-section .mission-cards-content {
+        gap: 38px;
+    }
+
+    .mission-section {
+        padding: 40px 0 65px 0;
+    }
+}

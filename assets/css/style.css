@@ -1185,9 +1185,17 @@ header {
   .main-header .link-container .nav-item .nav-link {
     white-space: nowrap;
   }
+
+  .common-banner-content .description {
+    max-width: 90%;
+  }
 }
 
 @media only screen and (max-width: 992px) {
+
+  .common-banner-content .description {
+    max-width: 95%;
+  }
 
   .section-mini-heading {
     font-size: 22px;
@@ -1817,5 +1825,22 @@ header {
 
   .footer-bg-color .footer-contain-bottom {
     padding: 4px 0px 9px 4px;
+  }
+
+  .common-banner-content h1 {
+    font-size: 20px;
+    line-height: 30px;
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 6px;
+  }
+
+  .common-banner-content h1 span {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .common-banner-content .description {
+    font-size: 10px;
+    line-height: 20px;
   }
 }
