@@ -377,7 +377,7 @@
 
 .owl-carousel .owl-nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   position: relative;
   gap: 80px;
@@ -893,14 +893,17 @@
 /* BEYMEN CARD SECTION */
 
 .beymen-card-section {
-  background-color: var(--grey);
+  background-color: var(--light-sky);
   padding: 56px 0 80px 0;
   overflow: hidden;
 }
 
+.beymen-mobile-slider {
+  display: none;
+}
+
 .beymen-card-section h3 {
   text-align: center;
-  background-color: var(--grey);
 }
 
 .beymen-card-section .cards-part {
@@ -1036,6 +1039,7 @@
   color: var(--primary);
   margin: 0;
 }
+
 
 
 /* NEWS-SECTION */
@@ -1407,6 +1411,39 @@
     padding-left: 0px !important;
     padding-right: 0px !important;
 }
+
+.beymen-card-section .cards-part {
+  display: none;
+}
+
+.beymen-mobile-slider {
+  display: block;
+  margin-top: 32px;
+}
+
+.beymen-card-section .beymen-details.white-card {
+  border: 0.5px solid #C9C9C9;
+  background-color: var(--white);
+  background: none;
+}
+
+.beymen-details.white-card h4 {
+  color: var(--blue);
+}
+
+.beymen-details.white-card h6 {
+  color: #BDC1D3;
+}
+
+.beymen-details.white-card p {
+  color: var(--primary);
+}
+
+.beymen-mobile-slider .item {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
 }
 
 @media (max-width: 640px) {
@@ -1559,10 +1596,11 @@
 
   .manage-section h3 {
     margin-bottom: 40px;
+    width:100%;
   }
 
   .manage-section .manage-accordion {
-    padding-left: 18px;
+    padding-left: 0;
   }
 
   .manage-section .manage-accordion .primary-button {
@@ -1621,6 +1659,18 @@
     font-size: 10px;
     line-height: 12px;
     margin-top: 10px;
+  }
+
+  .beymen-card-section .beymen-details::after {
+    width: 201px;
+    height: 201px;
+    bottom: -11%;
+  }
+
+  .beymen-card-section .beymen-details::before {
+    width: 133px;
+    height: 133px;
+    bottom: 7%;
   }
 
   .integration-section .btn-part {

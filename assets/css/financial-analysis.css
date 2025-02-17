@@ -1,0 +1,13 @@
+.retail-section{
+    padding: 45px 0;
+    background-color: var(--light-sky);
+}
+
+.retail-section p{
+    width:80%;
+}
+
+.retail-section .img-part img{
+    width:100%;
+    height: auto;
+}
