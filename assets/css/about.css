@@ -10,7 +10,57 @@
 }
 
 
+/* STORY-SECTION */
 
+.story-section {
+    overflow: hidden;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--light-sky);
+}
+
+.story-section .story-section-left .story-img {
+    width: 100%;
+    height: auto;
+}
+
+.story-section .story-section-right .story-head {
+    background-color: var(--dark-sky);
+    border-radius: 50px;
+    padding: 2px;
+    margin-bottom: 46px;
+}
+
+.story-section .story-section-right .story-head .story-head-content {
+    border: 0.5px solid var(--white);
+    border-radius: 50px;
+}
+
+.story-section .story-section-right .story-head .story-head-content .story-heading {
+    font-family: 'Gilroy';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    color: var(--primary);
+    padding: 0px 22px 0px 12px;
+}
+
+.story-section .story-section-right .story-head .story-head-content .story-head-img {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: var(--navy-blue);
+    background-image: url('./../images/about-us/right_arrow.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top: 0.5px solid var(--white);
+    border-right: 0.5px solid var(--white);
+    border-bottom: 0.5px solid var(--white);
+    border-left: none;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
 
 
 
@@ -151,6 +201,43 @@
     letter-spacing: -1%;
     text-align: justify;
     color: var(--primary);
+}
+
+@media (max-width:992px) {
+    .story-section .story-section-right .story-head .story-head-content .story-head-img {
+        display: none;
+    }
+
+    .story-section .story-section-left .story-img {
+        margin-bottom: 30px;
+        width: 82%;
+    }
+
+    .story-section .story-section-right .story-head .story-head-content .story-heading {
+        padding: 0px 22px 0px 22px;
+    }
+
+    .story-section .story-section-right .story-head {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:768px) {
+    .story-section .story-section-right .story-head .story-head-content .story-heading {
+        line-height: 24.18px;
+    }
+
+    .story-section {
+        padding-top: 18px;
+    }
+
+    .story-section .story-section-right .story-head {
+        border-radius: 27px;
+    }
+    
+    .story-section .story-section-right .story-head .story-head-content {
+        border-radius: 46px;
+    }
 }
 
 

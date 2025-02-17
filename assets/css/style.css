@@ -21,6 +21,7 @@
   --green:#2480004D;
   --grey1: #C9C9C9;
   --light-grey: #BDC1D3;
+  --dark-sky: #ACD3FB;
 }
 
 /* fonts  */
@@ -549,6 +550,12 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   width: max-content;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.main-header .solution-dropdown .solution-details .tab-content::-webkit-scrollbar {
+  display: none;
 }
 
 .main-header .solution-dropdown .solution-details .tab-content .content-card {
@@ -1040,35 +1047,35 @@ header {
 }
 
 /*COMMON NEWS-CARD */
-.news-section .news-info>* {
+ .news-info>* {
   padding-left: 20px !important;
   padding-right: 20px !important;
 }
 
-.news-section .news-content .new-img {
+.news-content .new-img {
   width: 100%;
   height: auto;
   margin-bottom: 15px;
 }
 
 
-.news-section .news-content {
+.news-content {
   border-radius: 11px;
   border: 0.5px solid var(--grey1);
 }
 
-.news-section .news-content .news-project {
+.news-content .news-project {
   padding: 14px 13px 0px 12px;
 }
 
-.news-section .news-content .news-team {
+.news-content .news-team {
   padding: 10px 13px 9px 12px;
   background-color: var(--light-sky);
   border-bottom-right-radius: 11px;
   border-bottom-left-radius: 11px;
 }
 
-.news-section .news-content .news-para {
+.news-content .news-para {
   font-family: 'Gilroy';
   font-weight: 700;
   font-size: 15px;
@@ -1076,7 +1083,7 @@ header {
   color: var(--light-grey);
 }
 
-.news-section .news-content .news-text {
+.news-content .news-text {
   font-family: 'Gilroy';
   font-weight: 700;
   font-size: 20px;
@@ -1085,20 +1092,20 @@ header {
   color: var(--primary);
 }
 
-.news-section .news-info .news-team {
+.news-info .news-team {
   gap: 14px;
 }
 
-.news-section .news-info .news-team .news-team-date {
+.news-info .news-team .news-team-date {
   gap: 8px;
 }
 
-.news-section .news-info .news-team .news-team-time {
+.news-info .news-team .news-team-time {
   gap: 8px;
   padding-top: 3px;
 }
 
-.news-section .news-info .news-team .news-team-text {
+.news-info .news-team .news-team-text {
   font-family: 'Gilroy';
   font-weight: 700;
   font-size: 12.4px;
@@ -1106,14 +1113,14 @@ header {
   color: var(--blue);
 }
 
-.news-section .news-info .news-team .news-date {
+.news-info .news-team .news-date {
   font-family: 'Gilroy';
   font-weight: 400;
   font-size: 10.85px;
   margin: 0;
 }
 
-.news-section .news-info .news-team .news-time {
+.news-info .news-team .news-time {
   font-family: 'Gilroy';
   font-weight: 400;
   font-size: 15px;
@@ -1487,41 +1494,41 @@ header {
     padding: 4px 8px;
   }
 
-  .news-section .news-content .news-project {
+  .news-content .news-project {
     padding: 10px 10px 0px 10px;
   }
 
-  .news-section .news-content .news-team {
+  .news-content .news-team {
     padding: 10px 10px 9px 10px;
   }
 
-  .news-section .news-content .news-text {
+  .news-content .news-text {
     font-size: 18px;
     line-height: 20.18px;
   }
 
-  .news-section .news-content .new-img {
+  .news-content .new-img {
     margin-bottom: 10px;
   }
 
-  .news-section .news-content .news-para {
+  .news-content .news-para {
     font-size: 12px;
   }
 
-  .news-section .news-info .news-content .news-team .new-icon {
+  .news-info .news-content .news-team .new-icon {
     width: 41px !important;
     height: 41px !important;
   }
 
-  .news-section .news-info .news-team .news-team-date {
+  .news-info .news-team .news-team-date {
     gap: 6px;
   }
 
-  .news-section .news-info .news-team {
+  .news-info .news-team {
     gap: 10px;
   }
 
-  .news-section .news-info .news-team .news-time {
+  .news-info .news-team .news-time {
     line-height: 15px;
   }
 }
@@ -1594,40 +1601,40 @@ header {
     gap: 25px;
   }
 
-  .news-section .news-content .news-para {
+  .news-content .news-para {
     font-size: 10px;
     line-height: 35px;
   }
 
-  .news-section .news-content .news-text {
+  .news-content .news-text {
     font-size: 15px;
     line-height: 18px;
   }
 
-  .news-section .news-content .new-img {
+  .news-content .new-img {
     margin-bottom: 0px;
   }
 
-  .news-section .news-info .news-team .news-team-text {
+  .news-info .news-team .news-team-text {
     font-size: 10px;
     line-height: 12px;
   }
 
-  .news-section .news-info .news-team .news-date {
+  .news-info .news-team .news-date {
     font-size: 10px;
 
   }
 
-  .news-section .news-content .news-team .news-team-time .clock-icon {
+  .news-content .news-team .news-team-time .clock-icon {
     width: 7px !important;
     height: 9px !important;
   }
 
-  .news-section .news-info .news-team .news-time {
+  .news-info .news-team .news-time {
     font-size: 10px;
   }
 
-  .news-section .news-info .news-team .news-team-time {
+  .news-info .news-team .news-team-time {
     gap: 6px;
     padding-top: 7px;
   }
