@@ -1,13 +1,52 @@
-.retail-section{
-    padding: 45px 0;
-    background-color: var(--light-sky);
+.retail-section {
+  padding: 45px 0;
+  background-color: var(--light-sky);
 }
 
-.retail-section p{
-    width:80%;
+.retail-section p {
+  width: 80%;
 }
 
-.retail-section .img-part img{
-    width:100%;
-    height: auto;
+.retail-section .img-part img {
+  width: 100%;
+  height: auto;
+}
+
+.blue-card-section {
+  padding: 100px 0 158px 0;
+}
+
+@media only screen and (max-width: 991px) {
+  .blue-card-section {
+    padding: 60px 0 120px 0;
+  }
+
+  .common-detail-section h6,
+  .common-detail-section p {
+    font-size: 25px;
+    line-height: 34px;
+    color: var(--blue);
+  }
+}
+
+@media only screen and (max-width: 520px) {
+
+  .common-detail-section h6,
+  .common-detail-section p {
+    font-size: 20px;
+    line-height: 24px;
+    color: var(--blue);
+  }
+
+  .blue-card-section {
+    padding: 20px 0 88px 0;
+  }
+
+  .financial-analysis .secondary-text {
+    text-align: justify;
+  }
+
+  .retail-section p {
+    width: 100%;
+  }
 }

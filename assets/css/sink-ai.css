@@ -1,0 +1,397 @@
+.accordion-section .sink-ai-accordion {
+  border-left: 1px solid #eff1ff;
+  padding-left: 60px;
+}
+
+.sink-ai-accordion .accordion-button {
+  padding: 22px 0;
+  border: 0;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 35px;
+  letter-spacing: 1px;
+  color: #bdc1d3;
+}
+
+.sink-ai-accordion .accordion-button::after {
+  display: none;
+  box-shadow: none;
+  outline: none;
+}
+
+.sink-ai-accordion .accordion-item {
+  border: none;
+}
+
+.sink-ai-accordion .accordion-button:focus,
+.sink-ai-accordion .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background-color: transparent;
+  color: var(--blue);
+  padding-bottom: 4px;
+  position: relative;
+}
+
+.sink-ai-accordion .accordion-body {
+  padding: 0;
+}
+
+.sink-ai-accordion .accordion-body .chip-container {
+  padding: 20px 0 50px 0;
+}
+
+.sink-ai-accordion .accordion-body .chip-container .chip {
+  border: 1.04px solid #dbdbdb;
+  border-radius: 12px;
+  padding: 11px;
+  width: 100%;
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--blue);
+  box-shadow: 0px 5.91px 73.86px -16.25px #00000033;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sink-ai-accordion .accordion-body .secondary-text {
+  margin-top: 16px;
+}
+
+.sink-ai-accordion .accordion-button:not(.collapsed)::before {
+  content: "";
+  position: absolute;
+  height: 44px;
+  width: 5px;
+  background-color: var(--primary);
+  left: -60px;
+  top: 74px;
+  border-radius: 11px;
+  z-index: 10;
+}
+
+.accordion-item .accordion-collapse.show {
+  position: relative;
+}
+
+.accordion-item .accordion-collapse.show::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 5px;
+  background-color: #eff1ff;
+  left: -60px;
+  top: 0px;
+  border-radius: 11px;
+  z-index: 1;
+}
+
+.sink-ai-accordion .accordion-item .accordion-header {
+  position: relative;
+}
+
+.sink-ai-accordion .accordion-item .accordion-header::before {
+  content: "";
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  background-color: var(--white);
+  background-repeat: no-repeat;
+  background-position: center;
+  left: -84px;
+  top: 20px;
+  z-index: 20;
+}
+
+.sink-ai-accordion .accordion-item:nth-child(1) .accordion-header::before {
+  background-image: url("./../images/sink-ai-consultant/01.svg");
+}
+
+.sink-ai-accordion .accordion-item:nth-child(2) .accordion-header::before {
+  background-image: url("./../images/sink-ai-consultant/02.svg");
+}
+
+.sink-ai-accordion .accordion-item:nth-child(3) .accordion-header::before {
+  background-image: url("./../images/sink-ai-consultant/03.svg");
+}
+
+.sink-ai-accordion .accordion-item:nth-child(4) .accordion-header::before {
+  background-image: url("./../images/sink-ai-consultant/04.svg");
+}
+
+.sink-ai-accordion .accordion-item:nth-child(5) .accordion-header::before {
+  background-image: url("./../images/sink-ai-consultant/05.svg");
+}
+
+.accordion-section {
+  padding-top: 64px;
+  padding-bottom: 80px;
+}
+
+.accordion-section .section-mini-heading {
+  text-align: center;
+}
+
+.accordion-section .section-mini-heading span {
+  font-weight: 500;
+}
+
+.accordion-section .section-content {
+  margin-top: 74px;
+}
+
+.accordion-section .section-content .left-part {
+  padding-right: 60px;
+}
+
+.accordion-section .section-content .left-part .left-card {
+  padding: 0px 20px 32px 20px;
+  box-shadow: 0px 5px 54px 0px #0000001a;
+  border: 2px solid #f0f0f0;
+  border-radius: 12px;
+  margin-top: 30px;
+}
+
+.accordion-section .section-content .left-part .left-card .section-img {
+  width: 100%;
+  height: auto;
+  margin-top: -30px;
+}
+
+.accordion-section .section-content .left-part .left-card h6 {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 35px;
+  color: var(--blue);
+  margin-top: 32px;
+  text-align: center;
+}
+
+.accordion-section .section-content .left-part .left-card h6 span {
+  color: var(--secondary);
+}
+
+.accordion-section .section-content .left-part .left-card p {
+  margin-top: 31px;
+}
+
+.accordion-section .section-content .right-part {
+  padding-left: 20px;
+}
+
+.customize-section {
+  margin: 146px 0 232px 0;
+  position: relative;
+}
+
+.customize-sink-content {
+  background-color: #f5f7fa;
+  background-image: url('./../images/sink-ai-consultant/customize-bg.svg');
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: relative;
+  padding: 32px 410px 32px 50px;
+}
+
+.customize-sink-content::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 0;
+  height: 80%;
+  width: 5px;
+  background: linear-gradient(0deg,
+      rgba(245, 248, 251, 0) 0%,
+      #ffc283 50.81%,
+      #f5f8fb 98.66%);
+}
+
+.customize-section .right-content {
+  position: absolute;
+  top: -136px;
+  right: 0;
+  display: flex;
+  justify-content: end;
+}
+
+.customize-section .right-content img {
+  width: 100%;
+}
+
+
+.customize-section .left-content h6 {
+  font-family: Gilroy;
+  font-weight: 700;
+  font-size: 40px;
+  background: linear-gradient(92.5deg, #003d7c 9.76%, #2158e2 84.04%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.customize-section .left-content p {
+  margin-top: 20px;
+}
+
+
+
+@media only screen and (max-width: 1280px) {
+  .customize-sink-content {
+    padding: 32px 460px 32px 50px;
+  }
+
+  .customize-section .right-content {
+    top: -122px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .customize-section .right-content {
+    top: -88px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .accordion-section .section-content .left-part {
+    padding-right: 0px;
+    margin-bottom: 60px;
+  }
+
+  .accordion-section .section-content .left-part .left-card h6 {
+    font-size: 24px;
+  }
+
+  .sink-ai-accordion .accordion-button {
+    font-size: 25px;
+  }
+
+  .accordion-section .section-content {
+    margin-top: 38px;
+  }
+
+  .sink-ai-accordion .accordion-item .accordion-header::before {
+    width: 24px;
+    height: 24px;
+    background-size: contain;
+    left: -72px;
+  }
+
+  .sink-ai-accordion .accordion-button:not(.collapsed)::before {
+    top: 50px;
+  }
+
+  .customize-section .right-content {
+    display: none;
+  }
+
+  .customize-section .left-content h6 {
+    font-size: 30px;
+  }
+
+  .customize-sink-content {
+    padding: 32px 50px;
+  }
+
+  .customize-section {
+    margin-left: calc((100vw - 720px) / 2);
+    margin-top: 60px;
+    margin-bottom: 100px;
+  }
+
+  .customize-section .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .customize-section {
+    margin-left: calc((100vw - 540px) / 2);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+
+  .customize-section {
+    margin-left: 8%;
+    margin-top: 0px;
+    margin-bottom: 100px;
+  }
+
+  .customize-section .left-content h6 {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .accordion-section .section-content .left-part .left-card h6 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .accordion-section .section-content .left-part .left-card p {
+    margin-top: 18px;
+    text-align: justify;
+  }
+
+  .accordion-section .section-content .left-part .left-card {
+    padding: 0px 10px 20px 10px;
+  }
+
+  .accordion-section .section-content .left-part .left-card .section-img {
+    margin-top: -38px;
+  }
+
+  .sink-ai-accordion .accordion-button {
+    font-size: 15px;
+  }
+
+  .sink-ai-accordion .accordion-item .accordion-header::before {
+    top: 22px;
+    left: -42px;
+  }
+
+  .sink-ai-accordion .accordion-body .chip-container .chip {
+    font-size: 14px;
+  }
+
+  .accordion-section .sink-ai-accordion {
+    padding-left: 30px;
+  }
+
+  .accordion-item .accordion-collapse.show::before {
+    left: -33px;
+  }
+
+  .sink-ai-accordion .accordion-button:not(.collapsed)::before {
+    left: -33px;
+  }
+
+  .accordion-section {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+
+  .customize-section .left-content h6 {
+    font-size: 16px;
+  }
+
+  .customize-section .left-content p {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  .customize-sink-content {
+    padding: 12px 20px;
+  }
+
+  .customize-section .left-content p {
+    font-size: 10px;
+    line-height: 18px;
+    text-align: justify;
+  }
+}

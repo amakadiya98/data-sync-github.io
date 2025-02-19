@@ -17,8 +17,8 @@
   --lightest-blue: #2674cf33;
   --light-yellow: #ffc28366;
   --sky: #BBCEE3;
-  --red:#7F000033;
-  --green:#2480004D;
+  --red: #7F000033;
+  --green: #2480004D;
   --light-grey: #BDC1D3;
   --dark-sky: #ACD3FB;
 }
@@ -105,7 +105,7 @@ body {
   font-family: "Gilroy";
   font-weight: 700;
   font-size: 25px;
-  letter-spacing: 2%;
+  letter-spacing: 1px;
   color: var(--navy-blue);
 }
 
@@ -114,7 +114,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 5%;
+  letter-spacing: 1px;
   color: var(--primary);
 }
 
@@ -149,7 +149,7 @@ body {
   border-radius: 9px;
   padding: 2px;
   cursor: pointer;
-  border:0;
+  border: 0;
 }
 
 .secondary-button-text {
@@ -214,12 +214,10 @@ header {
 
 .sub-header .right-border {
   border-right: 1px solid transparent;
-  border-image-source: linear-gradient(
-    180deg,
-    #002245 0%,
-    #ffc283 47.98%,
-    #002245 99.79%
-  );
+  border-image-source: linear-gradient(180deg,
+      #002245 0%,
+      #ffc283 47.98%,
+      #002245 99.79%);
   border-image-slice: 1;
 }
 
@@ -462,9 +460,9 @@ header {
   position: unset !important;
 }
 
-.solution-dropdown .tab-container{
-  width:max-content;
-  min-width:max-content;
+.solution-dropdown .tab-container {
+  width: max-content;
+  min-width: max-content;
   max-height: 75vh;
   overflow-y: auto;
 }
@@ -497,6 +495,7 @@ header {
   position: relative;
   text-decoration: none;
 }
+
 .main-header .services-dropdown .services-details .tab-link {
   max-width: 445px;
 }
@@ -566,22 +565,13 @@ header {
   border: 0.5px solid transparent;
 }
 
-.main-header
-  .solution-dropdown
-  .solution-details
-  .tab-content
-  .content-card:hover {
+.main-header .solution-dropdown .solution-details .tab-content .content-card:hover {
   background-color: #f7faff;
   border: 0.5px solid var(--off-white);
   border-radius: 11px;
 }
 
-.main-header
-  .solution-dropdown
-  .solution-details
-  .tab-content
-  .content-card
-  h5 {
+.main-header .solution-dropdown .solution-details .tab-content .content-card h5 {
   font-family: "Gilroy";
   font-weight: 700;
   font-size: 20px;
@@ -598,20 +588,12 @@ header {
   width: 90%;
 }
 
-.main-header
-  .solution-dropdown
-  .solution-details
-  .tab-content
-  .content-card-container {
+.main-header .solution-dropdown .solution-details .tab-content .content-card-container {
   width: calc(50% - 12px);
   text-decoration: none;
 }
 
-.main-header
-  .solution-dropdown
-  .solution-details
-  .tab-content
-  .content-card.small {
+.main-header .solution-dropdown .solution-details .tab-content .content-card.small {
   max-width: 350px;
 }
 
@@ -619,20 +601,11 @@ header {
   font-weight: 500;
 }
 
-.main-header
-  .services-dropdown
-  .services-details
-  .tab-content
-  .service-tab-content {
+.main-header .services-dropdown .services-details .tab-content .service-tab-content {
   padding: 24px;
 }
 
-.main-header
-  .services-dropdown
-  .services-details
-  .tab-content
-  .service-tab-content
-  p {
+.main-header .services-dropdown .services-details .tab-content .service-tab-content p {
   font-family: "Gilroy";
   font-weight: 700;
   font-size: 20px;
@@ -641,56 +614,34 @@ header {
   margin: 0;
 }
 
-.main-header
-  .services-dropdown
-  .services-details
-  .tab-content
-  .service-tab-content
-  ul {
+.main-header .services-dropdown .services-details .tab-content .service-tab-content ul {
   list-style: none;
   font-family: "Gilroy";
   font-weight: 400;
   font-size: 15px;
-  letter-spacing: 5%;
+  letter-spacing: 1px;
   color: var(--primary);
   padding-top: 16px;
 }
 
-.main-header
-  .services-dropdown
-  .services-details
-  .tab-content
-  .service-tab-content
-  ul
-  li {
+.main-header .services-dropdown .services-details .tab-content .service-tab-content ul li {
   margin-top: 12px;
   position: relative;
 }
 
-.main-header
-  .services-dropdown
-  .services-details
-  .tab-content
-  .service-tab-content
-  ul
-  li::before {
+.main-header .services-dropdown .services-details .tab-content .service-tab-content ul li::before {
   content: "";
   position: absolute;
   left: -30px;
   top: 50%;
   transform: translateY(-50%);
-  width: 16px; 
+  width: 16px;
   height: 16px;
   background: url("./../images/header/list-marker.svg") no-repeat center;
   background-size: contain;
 }
 
-.main-header
-  .services-dropdown
-  .services-details
-  .tab-content
-  .service-tab-content
-  button {
+.main-header .services-dropdown .services-details .tab-content .service-tab-content button {
   padding: 8px 36px;
   border: 1.04px solid #dbdbdb;
   border-radius: 11px;
@@ -735,7 +686,6 @@ header {
   background-color: var(--navy-blue);
   color: var(--white);
   padding-top: 45px;
-  margin-top: 84px;
 }
 
 .footer-bg-color .footer-contain-bottom {
@@ -893,38 +843,34 @@ header {
 }
 
 /* COMMON BANNER SECTION */
-
-/* COMMON BANNER SECTION  */
 .common-banner-section {
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  height: 600px;
+  background-position: center;
+  margin-top: -20px;
+  min-height: 600px;
+  padding-top: 274px;
+  background-image: url(../images/Hero_BG.png);
+  overflow: hidden;
   position: relative;
-  margin-top: -10px;
-  padding-top: 275px;
 }
 
 .common-banner-section.about-us-page {
+  padding: 168px 0 265px 0;
   background-image: url("../images/about-us/hero-bg.png");
 }
 
-.common-banner-section.about-us-page {
-  padding-top: 168px;
+.common-banner-section.about-us-page .description {
+  width: 70%;
+  margin: 0 auto;
 }
 
-.common-banner-section {
-  background-image: url("../images/Hero_BG.png");
+.common-banner-section.financial-analysis-page,
+.common-banner-section.market-sync-page {
+  padding-top: 220px;
 }
 
-.common-banner-section .custom-container {
-  max-width: 1220px;
-  width: 90%;
-  margin: auto;
-}
-
-
-.common-banner-content h1 {
+.common-banner-section h1 {
   color: var(--white);
   font-family: "Gilroy";
   font-weight: 700;
@@ -933,72 +879,73 @@ header {
   letter-spacing: -2%;
 }
 
-.common-banner-content .description {
+.common-banner-section h1.extra-large {
+  font-size: 50px;
+  line-height: 60px;
+}
+
+.common-banner-section h1 span {
+  color: var(--secondary);
+}
+
+.common-banner-section .description {
   font-family: "Gilroy";
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
-  letter-spacing: 5%;
-  text-align: center;
+  letter-spacing: 1px;
   color: var(--white);
-  max-width: 70%;
-  margin: auto;
 }
 
-.common-banner-content h1 span {
-  color: var(--secondary);
+.common-banner-section .small-label {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  color: var(--light-sky);
+  margin: 0;
 }
 
-/* contact us banner */
-.common-banner-section.contact-us-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.common-banner-section .large-lable {
+  font-family: 'Gilroy';
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 44px;
+  letter-spacing: 1px;
+  color: var(--light-sky);
+  margin: 0;
+}
+
+.common-banner-section .common-banner-content {
   position: relative;
 }
 
-.common-banner-section.contact-us-page .common-banner-content h1 {
-  max-width: 60%;
-  font-family: "Gilroy";
-  font-weight: 700;
-  font-size: 50px;
-  line-height: 60px;
-  letter-spacing: -2%;
-}
-
-.common-banner-section.contact-us-page .common-banner-content .small-label {
-  font-family: "Gilroy";
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 44px;
-  letter-spacing: 2%;
-  color: var(--light-sky);
-  margin-bottom: 0;
-}
-
-.common-banner-section.contact-us-page .right-side-image {
+.common-banner-section .right-side-image {
   position: absolute;
   right: 0;
-  bottom: 74px;
+  top: -20px;
+  width: 460px;
+  height: 370px;
 }
 
-/* sink-ai banner */
-.common-banner-section.sink-ai-page .common-banner-content h1,
-.common-banner-section.financial-analysis-page .common-banner-content h1 {
-  font-size: 40px;
+.right-side-image img {
+  width: 100%;
 }
 
-/* market-sync-page */
-.common-banner-section.market-sync-page .common-banner-content h1 {
-  max-width: 65%;
+.common-banner-section.sink-ai-page .right-side-image{
+  top: -80px;
+}
+.common-banner-section.contact-us-page .right-side-image {
+  top: -36px;
 }
 
-.common-banner-section .right-side-image.market-sync-page {
-  bottom: 0;
+.common-banner-section .common-banner-text-part {
+  padding-right: 402px;
 }
 
 /* banner button */
-.common-banner-section .common-banner-content button {
+.common-banner-section .banner-btn-part button {
   padding: 15px 36px;
   border-radius: 9px;
   border: 0;
@@ -1008,27 +955,27 @@ header {
   transition: all 0.3s ease;
 }
 
-.common-banner-section .common-banner-content .demo-btn {
+.common-banner-section .demo-btn {
   background-color: var(--secondary);
   color: var(--blue);
 }
 
-.common-banner-section .common-banner-content .demo-btn:hover {
+.common-banner-section .demo-btn:hover {
   background-color: var(--navy-blue);
   color: var(--white);
 }
 
-.common-banner-section .common-banner-content .contact-btn {
+.common-banner-section .contact-btn {
   background-color: var(--navy-blue);
   color: var(--white);
   transition: all 0.3s ease;
 }
 
-.common-banner-section .common-banner-content .contact-btn:hover img {
+.common-banner-section .contact-btn:hover img {
   transform: translateX(10px);
 }
 
-.common-banner-section .common-banner-content .contact-btn img {
+.common-banner-section .contact-btn img {
   transition: transform 0.3s ease;
 }
 
@@ -1040,6 +987,7 @@ header {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  z-index: 300;
 }
 
 .scroll-to-top .top-btn .top-btn-blue {
@@ -1066,15 +1014,13 @@ header {
 }
 
 /*COMMON NEWS-CARD */
- .news-info>* {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
-}
-
 .news-content .new-img {
   width: 100%;
   height: auto;
   margin-bottom: 15px;
+  max-width: 352px;
+  max-height: 240px;
+  object-fit: cover;
 }
 
 
@@ -1111,6 +1057,7 @@ header {
   color: var(--primary);
 }
 
+/* news-info */
 .news-info .news-team {
   gap: 14px;
 }
@@ -1150,13 +1097,13 @@ header {
 
 /* COMMON DETAIL SECTION  */
 
-.common-detail-section{
+.common-detail-section {
   padding-top: 34px;
   background-color: #FFE7CD;
-  margin-bottom:100px;
+  margin-bottom: 100px;
 }
 
-.common-detail-section h6{
+.common-detail-section h6 {
   font-family: 'Gilroy';
   font-weight: 700;
   font-size: 30px;
@@ -1164,50 +1111,50 @@ header {
   color: var(--primary);
 }
 
-.common-detail-section p{
+.common-detail-section p {
   font-family: 'Gilroy';
-font-weight: 400;
-font-size: 30px;
-line-height: 60px;
-color: var(--blue);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 60px;
+  color: var(--blue);
 }
 
-.common-detail-section .grid-content{
+.common-detail-section .grid-content {
   margin-top: 112px;
 }
 
-.common-detail-section .grid-content .image-part{
-  display:flex;
+.common-detail-section .grid-content .image-part {
+  display: flex;
   justify-content: left;
 }
 
-.common-detail-section .grid-content .image-part img{
+.common-detail-section .grid-content .image-part img {
   margin-bottom: -100px;
   width: 100%;
   height: auto;
 }
 
-.common-detail-section .grid-content .list-part ul{
+.common-detail-section .grid-content .list-part ul {
   font-family: 'Gilroy';
   font-weight: 700;
   font-size: 30px;
-  color:var(--blue);
+  color: var(--blue);
   list-style: none;
   padding-left: 80px;
 }
 
-.common-detail-section .grid-content .list-part ul li{
+.common-detail-section .grid-content .list-part ul li {
   margin-bottom: 58px;
   position: relative;
 }
 
-.common-detail-section .grid-content .list-part ul li::before{
+.common-detail-section .grid-content .list-part ul li::before {
   content: "";
   position: absolute;
   left: -40px;
   top: 22px;
   transform: translateY(-50%);
-  width: 24px; 
+  width: 24px;
   height: 24px;
   background: url("./../images/header/list-marker.svg") no-repeat center;
   background-size: contain;
@@ -1215,17 +1162,128 @@ color: var(--blue);
 
 /* COMMON IMAGE TEXT SECTION  */
 
-.image-text-section{
+.image-text-section {
   padding: 80px 0 200px 0;
 }
 
-.image-text-section .text-content{
+.image-text-section .text-content {
   width: 90%;
 }
 
-.image-text-section .img-part img{
-  width:100%;
-  height:auto;
+.image-text-section .img-part img {
+  width: 100%;
+  height: auto;
+}
+
+/* CONTACT SIDE BUTTON */
+.contact-btn-container {
+  display: flex;
+  position: absolute;
+  bottom: 4%;
+  right: -276px;
+  transition: all 0.3s ease;
+  align-items: center;
+  z-index: 200;
+}
+
+.contact-btn-container.show {
+  right: 0px;
+}
+
+.contact-btn-container .contact-btn {
+  background-color: var(--secondary);
+  border: 0;
+  padding: 18px 80px 18px 60px;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  border-bottom-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  transform: rotate(90deg);
+  margin-right: -100px;
+  position: relative;
+  color: var(--blue);
+  white-space: nowrap;
+  width: 250px;
+}
+
+.contact-btn-container .contact-btn::before {
+  position: absolute;
+  content: "";
+  bottom: 36%;
+  right: 20%;
+  background-image: url(../images/home/banner/blue-arrow-left.svg);
+  width: 14px;
+  height: 20px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  transition: transform 0.3s ease;
+}
+
+.contact-btn-container .contact-btn.move-left::before {
+  transform: rotate(-270deg);
+}
+
+.contact-btn-container .contact-btn-content {
+  background-color: var(--secondary);
+}
+
+.contact-btn-container .contact-content {
+  min-width: 276px;
+  width: 276px;
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4px 8px;
+  position: relative;
+  z-index: 2;
+  gap: 2px;
+  border-bottom-left-radius: 24px;
+  border-top-left-radius: 24px;
+  border: 1px solid var(--off-white);
+  height: 250px;
+}
+
+.contact-btn-container .contact-content a {
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 11px;
+  border: 0.5px solid transparent;
+}
+
+.contact-btn-container .contact-content a:hover {
+  background-color: var(--light-sky);
+  border: 0.5px solid var(--off-white);
+}
+
+.contact-btn-container .contact-content .contact-icon {
+  padding: 18px;
+  background: var(--primary);
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-btn-container .contact-content h6 {
+  font-family: "Gilroy";
+  font-weight: 700;
+  font-size: 15px;
+  margin: 0;
+  color: var(--primary);
+}
+
+.contact-btn-container .contact-content p {
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 9px;
+  margin: 0;
+  color: var(--primary);
+  margin-top: 4px;
 }
 
 
@@ -1244,32 +1302,24 @@ color: var(--blue);
 }
 
 @media only screen and (max-width: 1220px) {
+  .common-banner-section .common-banner-text-part {
+    padding-right: 432px;
+    padding-bottom: 50px;
+  }
+
   .solution-dropdown .solution-details {
     max-width: 95vw;
   }
 
-  .main-header
-    .solution-dropdown
-    .solution-details
-    .tab-content
-    .content-card-container {
+  .main-header .solution-dropdown .solution-details .tab-content .content-card-container {
     width: 100%;
   }
 
-  .main-header
-    .solution-dropdown
-    .solution-details
-    .tab-content
-    .content-card.small {
+  .main-header .solution-dropdown .solution-details .tab-content .content-card.small {
     max-width: 100%;
   }
 
-  .main-header
-    .solution-dropdown
-    .solution-details
-    .tab-content
-    .content-card
-    .content-card-content {
+  .main-header .solution-dropdown .solution-details .tab-content .content-card .content-card-content {
     width: 100%;
   }
 
@@ -1297,9 +1347,38 @@ color: var(--blue);
 }
 
 @media only screen and (max-width: 991px) {
+  .common-banner-section.about-us-page .description {
+    width: 100%;
+  }
 
-  .common-banner-content .description {
-    max-width: 95%;
+  .common-banner-section .large-lable {
+    text-align: center;
+  }
+
+  .common-banner-section .small-label {
+    text-align: center;
+  }
+
+  .banner-btn-part {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .common-banner-section.blog-page h1 {
+    text-align: start;
+  }
+
+  .common-banner-section h1 {
+    text-align: center;
+  }
+
+  .common-banner-section .right-side-image {
+    display: none;
+  }
+
+  .common-banner-section .common-banner-text-part {
+    padding-right: 0px;
+    padding-bottom: 0px;
   }
 
   .section-mini-heading {
@@ -1313,6 +1392,7 @@ color: var(--blue);
   .main-header {
     padding: 16px 0;
   }
+
   .main-header .navbar-toggler-icon {
     background-image: url("./../images/header/navbar-toggle.svg");
   }
@@ -1393,8 +1473,8 @@ color: var(--blue);
     display: block;
   }
 
-  .mobile-hidden{
-    display:none;
+  .mobile-hidden {
+    display: none;
   }
 
   .main-header .mobile-brand-part {
@@ -1467,11 +1547,7 @@ color: var(--blue);
     padding: 12px 30px;
   }
 
-  .main-header
-    .solution-dropdown
-    .solution-details
-    .tab-content
-    .content-card-container {
+  .main-header .solution-dropdown .solution-details .tab-content .content-card-container {
     width: 100vw;
   }
 
@@ -1480,11 +1556,7 @@ color: var(--blue);
     padding: 12px 30px;
   }
 
-  .main-header
-    .solution-dropdown
-    .solution-details
-    .tab-content
-    .content-card.small {
+  .main-header .solution-dropdown .solution-details .tab-content .content-card.small {
     max-width: 100vw;
   }
 
@@ -1499,7 +1571,7 @@ color: var(--blue);
     font-weight: 700;
     font-size: 20px;
     color: var(--blue);
-    margin:0;
+    margin: 0;
   }
 
   .main-header .link-container {
@@ -1519,11 +1591,11 @@ color: var(--blue);
     background-color: var(--white);
   }
 
-  .main-header.scrolled .link-container .nav-item .nav-link{
-    color:var(--primary);
+  .main-header.scrolled .link-container .nav-item .nav-link {
+    color: var(--primary);
   }
 
-  .main-header.scrolled .solution-dropdown .dropdown-toggle::after{
+  .main-header.scrolled .solution-dropdown .dropdown-toggle::after {
     background-image: url(./../images/header/down-arrow.svg);
   }
 
@@ -1541,12 +1613,12 @@ color: var(--blue);
     padding: 12px 40px;
   }
 
-  
+
   .section-heading {
     font-size: 36px;
     padding-bottom: 0px;
   }
-  
+
   /* FOOTER  */
   .footer-bg-color .footer-contain-top .footer-left-bottom {
     display: flex;
@@ -1573,10 +1645,6 @@ color: var(--blue);
 
   .footer-bg-color .footer-contain-top .footer-right .footer-details {
     gap: 23px;
-  }
-
-  .footer-bg-color {
-    margin-top: 0px;
   }
 
   .footer-bg-color .footer-contain-bottom {
@@ -1630,41 +1698,42 @@ color: var(--blue);
     line-height: 15px;
   }
 
-  .common-detail-section h6 , .common-detail-section p{
+  .common-detail-section h6,
+  .common-detail-section p {
     font-size: 24px;
     line-height: 44px;
   }
 
-  .common-detail-section .grid-content .image-part img{
-    margin-bottom:40px;
+  .common-detail-section .grid-content .image-part img {
+    margin-bottom: 40px;
   }
-  
-  .common-detail-section .grid-content{
-    margin-top:0;
+
+  .common-detail-section .grid-content {
+    margin-top: 0;
   }
-  
+
   .common-detail-section .grid-content .list-part ul {
     font-size: 25px;
     padding-left: 40px;
   }
-  
+
   .common-detail-section .grid-content .list-part ul li {
     margin-bottom: 12px;
   }
 
-  .common-detail-section{
+  .common-detail-section {
     padding: 20px 0 40px 0;
   }
 
-  .image-text-section .text-content{
-    width:100%;
+  .image-text-section .text-content {
+    width: 100%;
   }
 
-  .image-text-section .image-text-grid{
-    gap:54px;
+  .image-text-section .image-text-grid {
+    gap: 54px;
   }
 
-  .image-text-section.text-left-side .image-text-grid{
+  .image-text-section.text-left-side .image-text-grid {
     flex-direction: column-reverse;
   }
 
@@ -1675,25 +1744,41 @@ color: var(--blue);
 
 @media only screen and (max-width: 768px) {
 
+  /* common banner text */
+  .common-banner-section .large-lable {
+    font-size: 20px;
+    line-height: 34px;
+  }
+
+  .common-banner-section h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .common-banner-section h1.extra-large {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .common-banner-section .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .common-banner-section .small-label {
+    font-size: 18px;
+  }
+
+
   .section-mini-heading {
     font-size: 20px;
-}
+  }
 
-  .main-header
-    .services-dropdown
-    .services-details
-    .tab-content
-    .service-tab-content
-    p {
+  .main-header .services-dropdown .services-details .tab-content .service-tab-content p {
     font-size: 16px;
   }
 
-  .main-header
-    .services-dropdown
-    .services-details
-    .tab-content
-    .service-tab-content
-    ul {
+  .main-header .services-dropdown .services-details .tab-content .service-tab-content ul {
     font-size: 14px;
   }
 
@@ -1782,6 +1867,53 @@ color: var(--blue);
 }
 
 @media only screen and (max-width: 640px) {
+  .contact-btn-container .contact-content a {
+    padding: 4px;
+    border-radius: 6px;
+  }
+
+  .contact-btn-container .contact-content .contact-icon {
+    padding: 8px;
+  }
+
+  .contact-btn-container .contact-content .contact-icon img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .contact-btn-container .contact-content {
+    border-bottom-left-radius: 16px;
+    border-top-left-radius: 16px;
+    height: 194px;
+    min-width: 240px;
+    width: 240px;
+  }
+
+  .contact-btn-container {
+    right: -242px;
+  }
+
+  .contact-btn-container .contact-btn {
+    font-size: 15px;
+    margin-right: -86px;
+    padding: 4px 44px 2px 30px;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    width: 194px;
+  }
+
+
+  .contact-btn-container .contact-btn::before {
+    width: 10px;
+    height: 14px;
+    bottom: 30%;
+    right: 15%;
+  }
+
+  .home-page .contact-btn-container {
+    bottom: -2%;
+  }
+
   .sub-header .right-part {
     flex-direction: column;
     align-items: start !important;
@@ -1819,18 +1951,80 @@ color: var(--blue);
     height: 13px;
   }
 
-  
+
 
 }
 
 @media only screen and (max-width: 520px) {
+
+  /* common banner text */
+  .common-banner-section.about-us-page {
+    background-image: url("../images/about-us/hero-bgm.png");
+    padding: 140px 0 170px 0;
+  }
+
+  .common-banner-section.financial-analysis-page,
+  .common-banner-section.market-sync-page,
+  .common-banner-section.blog-page {
+    padding-top: 140px;
+  }
+
+  .common-banner-section {
+    min-height: 450px;
+    padding-top: 186px;
+  }
+
+  .common-banner-section .large-lable {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .common-banner-section {
+    background-image: url(../images/Hero_BG_small.png);
+  }
+
+  .common-banner-section .container {
+    padding: 0 20px;
+  }
+
+  .common-banner-section .banner-btn-part button {
+    padding: 9.5px 36px;
+  }
+
+  .common-banner-section .small-label {
+    font-size: 10px;
+    line-height: 12px;
+    width: 90%;
+    margin: 0 auto 7px auto;
+  }
+
+  .banner-btn-part {
+    margin-top: 30px !important;
+    gap: 14px;
+  }
+
+  .common-banner-section h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .common-banner-section h1.extra-large {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .common-banner-section .description {
+    font-size: 10px;
+    line-height: 20px;
+    letter-spacing: 1px;
+  }
 
   .secondary-text {
     font-size: 15px;
     line-height: 21px;
   }
 
-  .container{
+  .container {
     padding: 0 30px;
   }
 
@@ -1846,21 +2040,11 @@ color: var(--blue);
     font-size: 12px;
   }
 
-  .main-header
-    .solution-dropdown
-    .solution-details
-    .tab-content
-    .content-card
-    h5 {
+  .main-header .solution-dropdown .solution-details .tab-content .content-card h5 {
     font-size: 16px;
   }
 
-  .main-header
-    .solution-dropdown
-    .solution-details
-    .tab-content
-    .content-card
-    p {
+  .main-header .solution-dropdown .solution-details .tab-content .content-card p {
     font-size: 12px;
     margin-top: 8px;
   }
@@ -1869,21 +2053,11 @@ color: var(--blue);
     gap: 12px !important;
   }
 
-  .main-header
-    .services-dropdown
-    .services-details
-    .tab-content
-    .service-tab-content
-    p {
+  .main-header .services-dropdown .services-details .tab-content .service-tab-content p {
     font-size: 14px;
   }
 
-  .main-header
-    .services-dropdown
-    .services-details
-    .tab-content
-    .service-tab-content
-    ul {
+  .main-header .services-dropdown .services-details .tab-content .service-tab-content ul {
     font-size: 12px;
   }
 
@@ -1891,7 +2065,7 @@ color: var(--blue);
     padding: 5px 12px;
   }
 
-  .main-header{
+  .main-header {
     width: 100%;
     padding: 13px 0;
   }
@@ -1907,6 +2081,11 @@ color: var(--blue);
   .main-header .search-input-container input {
     font-size: 14px;
   }
+
+  .primary-button-text {
+    padding: 10px 42px;
+  }
+
 
   /* FOOTER  */
   .footer-bg-color {
@@ -1935,7 +2114,7 @@ color: var(--blue);
   .footer-bg-color .footer-contain-top .footer-left .footer-left-top .footer-solution {
     gap: 50px;
     padding-top: 40px;
-    width:90%;
+    width: 90%;
   }
 
   .footer-bg-color .footer-contain-top .footer-left .footer-left-top .footer-heading {
@@ -1955,7 +2134,7 @@ color: var(--blue);
     gap: 39px;
     flex-direction: row !important;
     margin-top: 12px;
-    width:90%;
+    width: 90%;
   }
 
   .footer-bg-color .footer-contain-top .footer-right .footer-details {
@@ -1979,39 +2158,14 @@ color: var(--blue);
     padding: 4px 0px 9px 4px;
   }
 
-  /* comman hero section */
-  .common-banner-section.about-us-page {
-    background-image: url("../images/about-us/hero-bgm.png");
-  }
-
-  .common-banner-section {
-    height: 500px;
-  }
-
-  .common-banner-content h1 {
-    font-size: 20px;
-    line-height: 30px;
-    margin: 0 auto;
-    padding-bottom: 6px;
-  }
-
-  .common-banner-content h1 span {
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  .common-banner-content .description {
-    font-size: 10px;
-    line-height: 20px;
-  }
-
   .image-text-section {
     padding: 40px 0;
   }
 
-  .common-detail-section h6, .common-detail-section p {
+  .common-detail-section h6,
+  .common-detail-section p {
     font-size: 16px;
-        line-height: 22px;
+    line-height: 22px;
   }
 
   .common-detail-section .grid-content .list-part ul {
@@ -2022,7 +2176,7 @@ color: var(--blue);
     top: 13px;
     width: 16px;
     height: 16px;
-    left:-24px;
+    left: -24px;
   }
 
   .common-detail-section .grid-content .list-part ul li {
