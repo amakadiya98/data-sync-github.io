@@ -60,7 +60,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
 }
 
 .datasync-team .team-info {
@@ -255,8 +254,6 @@
 
     .datasync-team {
         background-image: url(../images/about-us/datasync-team-bg-sm.png);
-        background-position: center calc(0% - 36px);
-
     }
 
     .datasync-team .team-member-info h3 {

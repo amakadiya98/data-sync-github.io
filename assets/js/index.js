@@ -105,7 +105,7 @@ $(document).ready(function () {
   $("#bannerContactButton").on("click", function () {
     $("#contactContent").toggleClass("show");
     $(this).toggleClass("move-left");
-});
+  });
 
   // Prevents Bootstrap from closing the dropdown
   $("#solutionTabs a, #servicesTabs a, .dropdown-menu").on(
@@ -273,25 +273,55 @@ $(document).ready(function () {
       '<button class="owl-next"></button>',
     ],
     responsive: {
-      0: { items: 1.4 },   
-      768: { items: 2 }, 
-      1000: { items: 3 } 
+      0: { items: 1.4 },
+      768: { items: 2 },
+      1000: { items: 3 },
     },
+  });
+
+  // CONTACT SECTION
+  const textarea = document.getElementById("message");
+  const charCount = document.getElementById("charCount");
+
+  textarea.addEventListener("input", () => {
+    charCount.textContent = textarea.value.length;
+  });
+
+
+  
+
+});
+
+$(document).ready(function () {
+  $(".video-container").each(function () {
+    const video = $(this).find("video")[0];
+    const playButton = $(this).find(".play-button");
+
+    playButton.on("click", function () {
+      if (video.paused) {
+        video.play();
+        playButton.hide();
+      }
+    });
+
+    $(video).on("ended", function () {
+      playButton.css("display", "flex");
+    });
   });
 });
 
 
-
-// CONTACT SECTION
-const textarea = document.getElementById("message");
-const charCount = document.getElementById("charCount");
-
-textarea.addEventListener("input", () => {
-    charCount.textContent = textarea.value.length;
+$(document).ready(function () {
+  const phoneInputField2 = document.querySelector("#phone2");
+  const phoneInput2 = window.intlTelInput(phoneInputField2, {
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+  });
 });
-
-const phoneInputField = document.querySelector("#phone");
-const phoneInput = window.intlTelInput(phoneInputField, {
-  utilsScript:
-    "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+$(document).ready(function () {
+  const phoneInputField = document.querySelector("#phone");
+  const phoneInput = window.intlTelInput(phoneInputField, {
+    utilsScript:
+      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+  });
 });

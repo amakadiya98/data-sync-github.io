@@ -162,19 +162,24 @@
 .contact-form-details .contact-form .form-group .form-control.phone-code-input {
   padding-left: 110px;
 }
-.iti {
-  margin: 0.8px;
-}
+
 .iti__flag-container {
   padding: 10px;
-  border: 1.04px solid #dbdbdb;
+  border-right: 1.04px solid #DBDBDB;
   z-index: 10;
-  border-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
+
 .iti__country-list {
   max-height: 200px;
   max-width: fit-content;
 }
+
+.iti__arrow.iti__arrow--up{
+  rotate: 180deg;
+}
+
 .iti__arrow {
   border: 0;
   background-image: url(../../assets/images/contact-us/down-arrow.svg);
@@ -184,6 +189,15 @@
   margin-left: 14px;
   background-size: contain;
   background-position: center;
+  transition: all 0.3s;
+}
+
+.iti__flag {
+  scale: 1.3;
+}
+
+.iti--allow-dropdown .iti__flag-container:hover .iti__selected-flag {
+  background-color: transparent;
 }
 
 /* SEND MODAL  */

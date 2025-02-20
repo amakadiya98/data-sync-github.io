@@ -1286,6 +1286,10 @@ header {
   margin-top: 4px;
 }
 
+.about-us-page .contact-btn-container, .blog-page .contact-btn-container, .contact-us-page .contact-btn-container, .market-sync-page .contact-btn-container, .financial-analysis-page .contact-btn-container, .sink-ai-page .contact-btn-container{
+  display: none;
+}
+
 
 /* MEDIA QUERY  */
 
@@ -1740,6 +1744,10 @@ header {
   .image-text-section {
     padding: 50px 0;
   }
+
+  .about-us-page .contact-btn-container, .blog-page .contact-btn-container, .contact-us-page .contact-btn-container, .market-sync-page .contact-btn-container, .financial-analysis-page .contact-btn-container, .sink-ai-page .contact-btn-container{
+    display: flex;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1910,10 +1918,6 @@ header {
     right: 15%;
   }
 
-  .home-page .contact-btn-container {
-    bottom: -2%;
-  }
-
   .sub-header .right-part {
     flex-direction: column;
     align-items: start !important;
@@ -2060,6 +2064,10 @@ header {
   .main-header .services-dropdown .services-details .tab-content .service-tab-content ul {
     font-size: 12px;
   }
+
+  .main-header .search-form-container {
+    top: 6px;
+}
 
   .sub-header {
     padding: 5px 12px;
