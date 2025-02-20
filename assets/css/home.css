@@ -246,7 +246,7 @@
   width: 45px;
   border-radius: 50%;
   background-color: var(--lightest-blue) !important;
-  background: url("/assets/images/home/software-section/prev_button.svg") no-repeat center center !important;
+  background: url("./../images/home/software-section/prev_button.svg") no-repeat center center !important;
 }
 
 .owl-carousel .owl-nav button.owl-next {
@@ -254,7 +254,7 @@
   width: 45px;
   border-radius: 50%;
   background-color: var(--lightest-blue) !important;
-  background: url("/assets/images/home/software-section/next_button.svg") no-repeat center center !important;
+  background: url("./../images/home/software-section/next_button.svg") no-repeat center center !important;
 }
 
 .owl-carousel button.owl-dot.active {

@@ -279,13 +279,7 @@ $(document).ready(function () {
     },
   });
 
-  // CONTACT SECTION
-  const textarea = document.getElementById("message");
-  const charCount = document.getElementById("charCount");
-
-  textarea.addEventListener("input", () => {
-    charCount.textContent = textarea.value.length;
-  });
+  
 
 
   
@@ -307,6 +301,15 @@ $(document).ready(function () {
     $(video).on("ended", function () {
       playButton.css("display", "flex");
     });
+  });
+
+
+  // CONTACT SECTION
+  const textarea = document.getElementById("message");
+  const charCount = document.getElementById("charCount");
+
+  textarea.addEventListener("input", () => {
+    charCount.textContent = textarea.value.length;
   });
 });
 

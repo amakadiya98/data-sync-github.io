@@ -96,7 +96,7 @@
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 768px) {
 
   .blue-card-container .card.width-full,
   .blue-card-container .card {
@@ -142,7 +142,7 @@
   }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 520px) {
 
   .market-sync.common-detail-section h6 {
     font-size: 20px;
@@ -153,5 +153,9 @@
   .market-sync.common-detail-section p {
     font-size: 15px;
     line-height: 21px;
+  }
+
+  .market-sync-content .image-text-section {
+    padding: 0 0 60px 0;
   }
 }
