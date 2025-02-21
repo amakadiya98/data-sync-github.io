@@ -394,4 +394,13 @@
     line-height: 18px;
     text-align: justify;
   }
+
+  .accordion-section .description{
+    line-height: 27px;
+  }
+
+  .sink-ai-accordion .accordion-body .secondary-text{
+    font-size: 10px;
+    line-height: 18px;
+  }
 }

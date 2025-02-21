@@ -158,4 +158,8 @@
   .market-sync-content .image-text-section {
     padding: 0 0 60px 0;
   }
+
+  .blue-card-container .secondary-button .secondary-button-text{
+    padding: 11px 40px;
+  }
 }

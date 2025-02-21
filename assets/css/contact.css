@@ -347,11 +347,11 @@
     .contact-details-content
     .contact-details
     .contact-info-text {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   .contact-info-section .contact-details-content .contact-details {
-    padding: 11px 11px;
+    padding: 10px 2px 10px 12px;
     min-height: 77px;
   }
 
@@ -379,6 +379,7 @@
 
   .contact-form-details {
     margin-top: 30px;
+    padding-bottom: 100px;
   }
 
   .contact-form-details .contact-form .form-group .form-label {
@@ -432,4 +433,9 @@
     border: 0;
     padding: 20px 12px 34px 12px;
   }
+
+  .send-modal .modal-content .send-modal-content .modal-body p {
+    font-size: 15px;
+    line-height: 20px;
+}
 }

@@ -2067,7 +2067,15 @@ header {
 
   .main-header .search-form-container {
     top: 6px;
-}
+  }
+
+  .main-header .search-form-container {
+    left: 20px;
+  }
+  
+  .main-header .search-form-container.show {
+    margin-right: 72px;
+  }
 
   .sub-header {
     padding: 5px 12px;
@@ -2075,7 +2083,7 @@ header {
 
   .main-header {
     width: 100%;
-    padding: 13px 0;
+    padding: 13px 8px;
   }
 
   .main-header .search-input-container button {

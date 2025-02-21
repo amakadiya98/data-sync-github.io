@@ -1095,6 +1095,10 @@
     .videos-section .videos-title {
         gap: 5px;
     }
+
+    .play-button-part {
+        top: 38%;
+    }
 }
 
 @media only screen and (max-width: 360px) {

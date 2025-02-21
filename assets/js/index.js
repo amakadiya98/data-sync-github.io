@@ -56,16 +56,14 @@ $(document).ready(function () {
     }
   });
 
-  $(document).ready(function () {
-    $(".nav-link").click(function () {
-      $(".nav-link").removeClass("active");
+    $(".main-header .nav-link").click(function () {
+      $(".main-header .nav-link").removeClass("active");
       $(this).addClass("active");
     });
 
     $(".dropdown").on("hidden.bs.dropdown", function () {
       $(this).find(".nav-link").removeClass("active");
     });
-  });
 
   // SEARCH BAR
   const $searchButton = $(".search-btn");
