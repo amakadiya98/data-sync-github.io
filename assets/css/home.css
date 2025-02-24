@@ -973,7 +973,7 @@
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1440px) {
   .manage-section {
     background-size: auto 90%;
   }
@@ -1034,7 +1034,7 @@
 
 @media (max-width: 992px) {
   .integration-section {
-    margin: 80px 0 0 0;
+    margin: 40px 0 80px 0;
   }
 
   .banner-section .banner-content h1 {
@@ -1186,12 +1186,10 @@
   }
 
   .integration-section .integation-content img {
-    margin-top: -100px;
+    margin-top: 20px;
+    margin-bottom: -100px
   }
 
-  .integration-section .revers-row {
-    flex-direction: column-reverse;
-  }
 }
 
 @media (max-width: 768px) {
@@ -1379,14 +1377,6 @@
 
   .banner-section .container {
     padding: 0 20px;
-  }
-
-  .secondary-text {
-    text-align: justify;
-  }
-
-  .help-section .help-subpara {
-    text-align: justify !important;
   }
 
   .datasync-section .custom-list li {
@@ -1627,7 +1617,7 @@
   }
 
   .integration-section .integation-content img {
-    margin-top: -80px;
+    margin-bottom: -80px;
   }
 
   .integration-section .integation-content h3 br {
@@ -1645,8 +1635,5 @@
 
   .sink-section {
     padding-bottom: 0;
-  }
-  .news-section .secondary-text {
-    text-align: justify;
   }
 }

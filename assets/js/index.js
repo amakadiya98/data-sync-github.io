@@ -214,115 +214,85 @@ $(document).ready(function () {
     }
   });
 
-  function toggleView() {
-    const isMobile = $(window).width() <= 768;
-    const $carousel = $(".primary-slider");
-    const $softwareContent = $(".software-content");
-    const $consultingContent = $(".consulting-content");
+});
 
-    if (isMobile) {
-      $carousel.show();
-
-      if (!$carousel.hasClass("owl-loaded")) {
-        $carousel.owlCarousel({
-          loop: true,
-          margin: 10,
-          nav: true,
-          dots: true,
-          autoplay: true,
-          autoplayTimeout: 5000,
-          autoplaySpeed: 1000,
-          autoplayHoverPause: true,
-          navText: [
-            '<button class="owl-prev"></button>',
-            '<button class="owl-next"></button>',
-          ],
-          responsive: {
-            0: { items: 1 },
-            600: { items: 1 },
-            1000: { items: 1 },
-          },
-        });
-      }
-
-      $softwareContent.hide();
-      $consultingContent.hide();
+$(document).ready(function () {
+  // Handle Tab Events
+  function handleTabEvent() {
+    let windowWidth = $(window).width();
+    
+    $('.tab-container .tab-link').off('mouseenter click');
+    
+    if (windowWidth >= 992) {
+      $('.tab-container .tab-link').on('mouseenter click', function () {
+        $(this).tab('show');
+      });
     } else {
-      $carousel.hide();
-      $softwareContent.css("display", "flex");
-      $consultingContent.css("display", "flex");
+      $('.tab-container .tab-link').on('click', function () {
+        $(this).tab('show');
+      });
     }
   }
 
-  toggleView();
-  $(window).on("resize", toggleView);
+  handleTabEvent();
+  $(window).resize(handleTabEvent);
 
-  $(".writers-slider").owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: true,
-    dots: true,
-    autoplay: false,
-    autoplayTimeout: 5000,
-    autoplaySpeed: 1000,
-    autoplayHoverPause: true,
-    navText: [
-      '<button class="owl-prev"></button>',
-      '<button class="owl-next"></button>',
-    ],
-    responsive: {
-      0: { items: 1.4 },
-      768: { items: 2 },
-      1000: { items: 3 },
-    },
-  });
+  // Handle Solution Dropdown using jQuery
+  function setupDropdowns() {
+    $('.solution-dropdown').each(function () {
+      var $dropdown = $(this),
+          $toggle   = $dropdown.find('.dropdown-toggle'),
+          $menu     = $dropdown.find('.dropdown-menu'),
+          openTimer,
+          closeTimer;
+      
+      // Remove previously attached event listeners
+      $toggle.off('click');
+      $dropdown.off('mouseenter mouseleave');
+      $menu.off('mouseenter mouseleave');
 
-  
-
-
-  
-
-});
-
-$(document).ready(function () {
-  $(".video-container").each(function () {
-    const video = $(this).find("video")[0];
-    const playButton = $(this).find(".play-button");
-
-    playButton.on("click", function () {
-      if (video.paused) {
-        video.play();
-        playButton.hide();
+      if ($(window).width() > 991) {
+        // Desktop - Hover Behavior
+        $dropdown.on('mouseenter', function () {
+          clearTimeout(closeTimer);
+          openTimer = setTimeout(function () {
+            $menu.addClass('show');
+            $toggle.addClass('active');
+          }, 300);
+        }).on('mouseleave', function () {
+          clearTimeout(openTimer);
+          closeTimer = setTimeout(function () {
+            $menu.removeClass('show');
+            $toggle.removeClass('active');
+          }, 500);
+        });
+        
+        $menu.on('mouseenter', function () {
+          clearTimeout(closeTimer);
+        }).on('mouseleave', function () {
+          closeTimer = setTimeout(function () {
+            $menu.removeClass('show');
+            $toggle.removeClass('active');
+          }, 500);
+        });
+      } else {
+        // Mobile - Click Behavior (Bootstrap default)
+        $toggle.on('click', function (event) {
+          event.preventDefault();
+          $menu.toggleClass('show');
+          $toggle.toggleClass('active');
+        });
       }
     });
+  }
 
-    $(video).on("ended", function () {
-      playButton.css("display", "flex");
-    });
-  });
+  // Initial setup
+  setupDropdowns();
 
-
-  // CONTACT SECTION
-  const textarea = document.getElementById("message");
-  const charCount = document.getElementById("charCount");
-
-  textarea.addEventListener("input", () => {
-    charCount.textContent = textarea.value.length;
-  });
+  // Re-apply event listeners on window resize
+  $(window).on('resize', setupDropdowns);
 });
 
 
-$(document).ready(function () {
-  const phoneInputField2 = document.querySelector("#phone2");
-  const phoneInput2 = window.intlTelInput(phoneInputField2, {
-    utilsScript:
-      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-  });
-});
-$(document).ready(function () {
-  const phoneInputField = document.querySelector("#phone");
-  const phoneInput = window.intlTelInput(phoneInputField, {
-    utilsScript:
-      "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-  });
-});
+
+
