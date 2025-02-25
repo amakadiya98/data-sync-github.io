@@ -2269,6 +2269,13 @@ header {
 
 }
 
+@media only screen and (max-width: 420px) {
+  .footer-bg-color .footer-contain-top .footer-right .footer-details .footer-icon{
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
 @media only screen and (max-width: 350px) {
   .main-header {
     padding: 13px 0px;
