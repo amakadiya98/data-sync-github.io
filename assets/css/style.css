@@ -271,7 +271,11 @@ header {
   color: var(--secondary);
 }
 
-.main-header .link-container .nav-item .nav-link.active::before {
+.main-header .link-container .nav-item .nav-link.page-active{
+  color: var(--secondary);
+}
+
+.main-header .link-container .nav-item .nav-link.active::before, .main-header .link-container .nav-item .nav-link.page-active::before {
   content: "";
   display: block;
   width: 100%;
@@ -675,6 +679,11 @@ header {
 }
 
 .main-header .solution-dropdown .dropdown-toggle:hover::after {
+  background-image: url("./../images/header/secondary-arrow.svg");
+  transform: rotate(180deg);
+}
+
+.main-header .solution-dropdown .dropdown-toggle.page-active::after{
   background-image: url("./../images/header/secondary-arrow.svg");
   transform: rotate(180deg);
 }
@@ -1493,6 +1502,7 @@ header {
   .main-header .search-form-container.show {
     width: -webkit-fill-available;
     margin-right: 64px;
+    z-index: 100000;
   }
 
   .desktop-hidden {
@@ -1529,8 +1539,21 @@ header {
     transform: rotate(-90deg);
   }
 
-  .main-header .link-container .nav-item .nav-link.active::before {
+  .main-header .link-container .nav-item .nav-link.active::before, .main-header .link-container .nav-item .nav-link.page-active::before {
     display: none;
+  }
+
+  .main-header .services-dropdown .services-details .tab-content .service-tab-content{
+    width: 100%;
+  }
+
+  .main-header .link-container .nav-item .nav-link.page-active::after{
+    transform: rotate(-90deg);
+    background-image: url(./../images/header/down-arrow.svg);
+  }
+
+  .main-header .link-container .nav-item .nav-link.page-active{
+    color: var(--primary)
   }
 
   .main-header .link-container .nav-item .nav-link.dropdown-toggle {
@@ -1545,6 +1568,8 @@ header {
     left: 0;
     top: 0;
     z-index: 100;
+    padding-top: 94px;
+    overflow-y: auto;
   }
 
   .main-header .link-container .nav-item .nav-link {
@@ -1693,7 +1718,10 @@ header {
 
   .main-header .navbar-brand {
     padding: 4px 8px;
+    position: relative;
+    z-index: 10000;
   }
+
 
   .news-content .news-project {
     padding: 10px 10px 0px 10px;
@@ -1934,7 +1962,7 @@ header {
 
   .contact-btn-container .contact-btn {
     font-size: 15px;
-    margin-right: -86px;
+    margin-right: -82px;
     padding: 4px 44px 2px 30px;
     border-bottom-right-radius: 16px;
     border-bottom-left-radius: 16px;

@@ -438,4 +438,8 @@
     font-size: 15px;
     line-height: 20px;
 }
+
+.contact-info-section .contact-details-content > * {
+  padding: 0 !important;
+}
 }
