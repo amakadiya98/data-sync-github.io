@@ -136,6 +136,8 @@ $(document).ready(function () {
   });
 
   // dont want to show first tab by default
+  let lastWidth = $(window).width(); // Store initial width
+
   function updateTabsVisibility() {
     if ($(window).width() < 991) {
       $("#tab1, #tab5").removeClass("show active");
@@ -145,10 +147,29 @@ $(document).ready(function () {
       $("#tab1-tab, #tab5-tab").addClass("active");
     }
   }
-
-  // Run on load and resize
+  
+  // Debounce function to optimize performance
+  function debounce(func, delay) {
+    let timeout;
+    return function () {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, arguments), delay);
+    };
+  }
+  
+  // Optimized resize event (Only X-axis)
+  $(window).resize(
+    debounce(function () {
+      let newWidth = $(window).width();
+      if (newWidth !== lastWidth) {
+        updateTabsVisibility();
+        lastWidth = newWidth; // Update lastWidth after calling function
+      }
+    }, 200)
+  );
+  
+  // Run on page load
   updateTabsVisibility();
-  $(window).resize(updateTabsVisibility);
 
   $("#closeSolutions").on("click", function () {
     $("#solutionsDropdown").dropdown("hide");

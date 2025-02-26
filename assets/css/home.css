@@ -233,6 +233,10 @@
   margin-top: 50px;
 }
 
+.software-section .software-text-content sup{
+  color: var(--yellow)
+}
+
 .owl-carousel .item {
   display: block !important;
 }
