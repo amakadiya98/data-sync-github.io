@@ -87,6 +87,7 @@
 
 body {
   margin: 0;
+  zoom:0.9;
 }
 
 /* COMMON  */
@@ -1382,6 +1383,10 @@ header {
 }
 
 @media only screen and (max-width: 991px) {
+  body {
+    zoom: 1;
+  }
+
   .common-banner-section.about-us-page .description {
     width: 100%;
   }
