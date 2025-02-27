@@ -14,7 +14,7 @@ $(document).ready(function () {
           '<button class="owl-next"></button>',
         ],
         responsive: {
-          0: { items: 1.4 },
+          0: { items: 1 },
           768: { items: 2 },
           1000: { items: 3 },
         },

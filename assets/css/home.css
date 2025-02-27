@@ -638,7 +638,7 @@
   font-size: 20px;
   line-height: 21px;
   letter-spacing: -2%;
-  color: #bdc1d3;
+  color: #969dbf;
   padding: 18px 8px;
   border-radius: 11px;
   border: 0.5px solid #c9c9c9;
@@ -766,7 +766,7 @@
   font-size: 20px;
   line-height: 44px;
   letter-spacing: 1px;
-  color: #bdc1d3;
+  color: #969dbf;
   padding-left: 30px;
 }
 
@@ -971,10 +971,17 @@
 }
 /* MEDIA QUERY  */
 
+@media (min-width: 1600px) {
+  .sink-section .section-image {
+    width: 82%;
+  }
+}
+
 @media (min-width: 1500px) {
   .sink-section .sink-section-content {
     max-width: 80%;
   }
+
 }
 
 @media (max-width: 1440px) {

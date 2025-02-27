@@ -53,7 +53,7 @@
   text-align: center;
   color: var(--white);
   margin-top: 30px;
-  min-height: 126px;
+  min-height: 180px;
 }
 
 .blue-card-container .card img {
@@ -63,6 +63,18 @@
 
 .blue-card-container .card .secondary-button {
   margin-top: 16px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .blue-card-container .card .card-text {
+    min-height: 210px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .blue-card-container .card .card-text {
+    min-height: 270px;
+  }
 }
 
 @media only screen and (max-width: 991px) {

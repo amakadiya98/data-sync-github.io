@@ -1905,6 +1905,7 @@ header {
 
   .news-content .new-img {
     margin-bottom: 0px;
+    max-width: 500px;
   }
 
   .news-info .news-team .news-team-text {

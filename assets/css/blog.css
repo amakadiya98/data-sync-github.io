@@ -779,6 +779,11 @@
 }
 
 @media only screen and (max-width: 520px) {
+    
+.writer-section .writers-slider-content .item {
+    max-width:300px;
+    margin:0 auto;
+}
 
     .latest-post-section .main-card {
         border: none;
@@ -1016,17 +1021,11 @@
         margin-top: -36px;
     }
 
-    .writer-section .container {
-        padding: 0px;
-    }
 
     .writer-section .owl-carousel .owl-nav {
         right: 30px;
     }
 
-    .writer-section {
-        padding: 30px 0 30px 30px;
-    }
 
     .articles-section .articles-top-left .articles-book-img {
         width: 35px;
