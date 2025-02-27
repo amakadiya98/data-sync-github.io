@@ -1325,6 +1325,11 @@ header {
   }
 }
 
+@media (min-width: 1600px) {
+  .common-banner-section.about-us-page {
+    padding: 210px 0 350px 0;
+}
+}
 @media (min-width: 1400px) {
   .container {
     max-width: 1242px;
